@@ -8,7 +8,9 @@
 	}
 
 	if(query.what) {
-		document.getElementById("what").innerHTML = query.what;
-		speak(query.what);
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			document.getElementById("what").innerHTML = query.what;
+			window.speak(query.what, { noWorker: true });
+		});
 	}
-}(window.location.search))
+}(window.location.search));
