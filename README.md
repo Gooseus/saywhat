@@ -7,4 +7,4 @@ Anyways, nothing to it, if you look at the speak.js helloworld example, this bas
 
 I designed it to do this quickly and hope to make it super duper fast at reading string passed in with support of all the features of the NEW and IMPROVED (maybe) speak.js
 
-Let me know what you think and any problems you encounter.
+Let me know what you find, or think of, any [issues](https://github.com/Gooseus/saywhat/issues) - technical or otherwise.
