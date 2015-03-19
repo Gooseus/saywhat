@@ -6,7 +6,7 @@ var fs				=	require('fs'),
 
 	http			=	require('http'),
 	express			=	require('express'),
-	errorHandler	=	require('errorHandler'),
+	errorHandler	=	require('errorhandler'),
 
 	// command line arguments
 	argv			=	require('minimist')(process.argv.slice(2)),
