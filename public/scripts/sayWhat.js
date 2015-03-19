@@ -8,6 +8,7 @@
 	}
 
 	if(query.what) {
+		document.getElementById("what").innerHTML = query.what;
 		speak(query.what);
 	}
 }(window.location.search))

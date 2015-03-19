@@ -26,7 +26,7 @@ app.set('port', process.env.PORT || (argv.p || 8666));
 // static file server
 app.use(express.static(__dirname + '/public'));
 
-// override index.html with angular app
+// override index.html with app
 app.get('*', sendIndex);
 
 // configure error handling appropriate for environment
@@ -40,5 +40,5 @@ if(env=='local' || env=='dev') {
 }
 
 http.createServer(app).listen(app.get('port'), function () {
-	console.log("TellMe App Running: ", app.get('port'));
+	console.log("SayWhat App Running: ", app.get('port'));
 });
