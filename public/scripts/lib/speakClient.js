@@ -55,8 +55,13 @@ function speak(text, args) {
       return ret;
     }
 
-    document.getElementById("audio").innerHTML=("<audio autoplay=\"false\" id=\"player\" src=\"data:audio/x-wav;base64,"+encode64(wav)+"\">");
-    document.getElementById("player").play();
+    document.getElementById("audio").innerHTML=("<audio autoplay=\"false\" id=\"player\">");
+    document.getElementById("player").src = "data:audio/x-wav;base64,"+encode64(wav);
+    document.getElementById("player").addEventListener('loadedmetadata', function() {
+        this.play();
+        // sprite.pause();
+    });
+    // document.getElementById("player").play();
   }
 
   function playAudioDataAPI(data) {
