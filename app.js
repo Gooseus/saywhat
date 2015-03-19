@@ -21,7 +21,7 @@ var fs				=	require('fs'),
 							res.send(index_html);
 						};
 
-app.set('port', argv.p || 8666);
+app.set('port', process.env.PORT || (argv.p || 8666));
 
 // static file server
 app.use(express.static(__dirname + '/public'));
